@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A0B49EE212308C100E75B60 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0B49ED212308C100E75B60 /* Asset.swift */; };
+		5A5DA43C211036240088F187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5DA43A211036240088F187 /* Main.storyboard */; };
+		5A5DA43E211036260088F187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A5DA43D211036260088F187 /* Assets.xcassets */; };
+		5A5DA441211036260088F187 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5DA43F211036260088F187 /* LaunchScreen.storyboard */; };
+		5A5DA44C211036260088F187 /* SpacemanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5DA44B211036260088F187 /* SpacemanTests.swift */; };
+		5A5DA457211036260088F187 /* SpacemanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5DA456211036260088F187 /* SpacemanUITests.swift */; };
+		5A68D7612110398E00860348 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68D75A2110398D00860348 /* Bundle.swift */; };
+		5A68D7622110398E00860348 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68D75B2110398D00860348 /* GameScene.swift */; };
+		5A68D7632110398E00860348 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68D75C2110398D00860348 /* Utils.swift */; };
+		5A68D7642110398E00860348 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68D75D2110398D00860348 /* GameLogic.swift */; };
+		5A68D7652110398E00860348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68D75E2110398D00860348 /* AppDelegate.swift */; };
+		5A68D7662110398E00860348 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68D75F2110398D00860348 /* GameViewController.swift */; };
+		5A68D7672110398E00860348 /* StartPanelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68D7602110398E00860348 /* StartPanelNode.swift */; };
+		5A68D76E2110399E00860348 /* laser.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5A68D76A2110399D00860348 /* laser.wav */; };
+		5A68D76F2110399E00860348 /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5A68D76B2110399E00860348 /* explosion.wav */; };
+		5A68D777211039BF00860348 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5A68D772211039BF00860348 /* MyParticle.sks */; };
+		5A68D778211039BF00860348 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A68D773211039BF00860348 /* spark.png */; };
+		5A68D779211039BF00860348 /* ship-fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5A68D774211039BF00860348 /* ship-fire.sks */; };
+		5A68D77A211039BF00860348 /* star-rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5A68D775211039BF00860348 /* star-rain.sks */; };
+		5A68D77B211039BF00860348 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A68D776211039BF00860348 /* star.png */; };
+		5A68D7BE21103C3700860348 /* SpaceShipLaserOverheatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68D7BB21103C3700860348 /* SpaceShipLaserOverheatNode.swift */; };
+		5A68D7BF21103C3700860348 /* SpaceShipLaserOverheat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68D7BC21103C3700860348 /* SpaceShipLaserOverheat.swift */; };
+		5A68D7C021103C3700860348 /* SpaceShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68D7BD21103C3700860348 /* SpaceShip.swift */; };
+		5A68DCA621103EAE00860348 /* SKNodeExplosion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68DCA221103EAE00860348 /* SKNodeExplosion.swift */; };
+		5A68DCA721103EAE00860348 /* NyanCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68DCA321103EAE00860348 /* NyanCat.swift */; };
+		5A68DCA821103EAE00860348 /* EnemyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68DCA421103EAE00860348 /* EnemyNode.swift */; };
+		5A68DCA921103EAE00860348 /* SpaceSpriteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68DCA521103EAE00860348 /* SpaceSpriteNode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A5DA448211036260088F187 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A5DA425211036240088F187 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5DA42C211036240088F187;
+			remoteInfo = Spaceman;
+		};
+		5A5DA453211036260088F187 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A5DA425211036240088F187 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5DA42C211036240088F187;
+			remoteInfo = Spaceman;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A0B49ED212308C100E75B60 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		5A5DA42D211036240088F187 /* Spaceman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spaceman.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5DA43B211036240088F187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A5DA43D211036260088F187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A5DA440211036260088F187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A5DA442211036260088F187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5DA447211036260088F187 /* SpacemanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpacemanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5DA44B211036260088F187 /* SpacemanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacemanTests.swift; sourceTree = "<group>"; };
+		5A5DA44D211036260088F187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5DA452211036260088F187 /* SpacemanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpacemanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5DA456211036260088F187 /* SpacemanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacemanUITests.swift; sourceTree = "<group>"; };
+		5A5DA458211036260088F187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A68D75A2110398D00860348 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		5A68D75B2110398D00860348 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		5A68D75C2110398D00860348 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5A68D75D2110398D00860348 /* GameLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
+		5A68D75E2110398D00860348 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A68D75F2110398D00860348 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5A68D7602110398E00860348 /* StartPanelNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartPanelNode.swift; sourceTree = "<group>"; };
+		5A68D76A2110399D00860348 /* laser.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser.wav; sourceTree = "<group>"; };
+		5A68D76B2110399E00860348 /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
+		5A68D772211039BF00860348 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		5A68D773211039BF00860348 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		5A68D774211039BF00860348 /* ship-fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "ship-fire.sks"; sourceTree = "<group>"; };
+		5A68D775211039BF00860348 /* star-rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "star-rain.sks"; sourceTree = "<group>"; };
+		5A68D776211039BF00860348 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		5A68D7BB21103C3700860348 /* SpaceShipLaserOverheatNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceShipLaserOverheatNode.swift; sourceTree = "<group>"; };
+		5A68D7BC21103C3700860348 /* SpaceShipLaserOverheat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceShipLaserOverheat.swift; sourceTree = "<group>"; };
+		5A68D7BD21103C3700860348 /* SpaceShip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceShip.swift; sourceTree = "<group>"; };
+		5A68DCA221103EAE00860348 /* SKNodeExplosion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKNodeExplosion.swift; sourceTree = "<group>"; };
+		5A68DCA321103EAE00860348 /* NyanCat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NyanCat.swift; sourceTree = "<group>"; };
+		5A68DCA421103EAE00860348 /* EnemyNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyNode.swift; sourceTree = "<group>"; };
+		5A68DCA521103EAE00860348 /* SpaceSpriteNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceSpriteNode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A5DA42A211036240088F187 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5DA444211036260088F187 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5DA44F211036260088F187 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A5DA424211036240088F187 = {
+			isa = PBXGroup;
+			children = (
+				5A5DA42F211036240088F187 /* Spaceman */,
+				5A5DA44A211036260088F187 /* SpacemanTests */,
+				5A5DA455211036260088F187 /* SpacemanUITests */,
+				5A5DA42E211036240088F187 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A5DA42E211036240088F187 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A5DA42D211036240088F187 /* Spaceman.app */,
+				5A5DA447211036260088F187 /* SpacemanTests.xctest */,
+				5A5DA452211036260088F187 /* SpacemanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A5DA42F211036240088F187 /* Spaceman */ = {
+			isa = PBXGroup;
+			children = (
+				5A68D75E2110398D00860348 /* AppDelegate.swift */,
+				5A68D75A2110398D00860348 /* Bundle.swift */,
+				5A68D75D2110398D00860348 /* GameLogic.swift */,
+				5A68D75B2110398D00860348 /* GameScene.swift */,
+				5A68D75F2110398D00860348 /* GameViewController.swift */,
+				5A68D7602110398E00860348 /* StartPanelNode.swift */,
+				5A68D75C2110398D00860348 /* Utils.swift */,
+				5A5DA43D211036260088F187 /* Assets.xcassets */,
+				5A5DA442211036260088F187 /* Info.plist */,
+				5AA2585A27580F3400F96F4F /* Design */,
+				5A68DCAA21103EB500860348 /* nodes */,
+				5A68D7BA21103C3700860348 /* spaceship */,
+				5A68D771211039BF00860348 /* particles */,
+				5A68D770211039A400860348 /* Sounds */,
+			);
+			path = Spaceman;
+			sourceTree = "<group>";
+		};
+		5A5DA44A211036260088F187 /* SpacemanTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A5DA44B211036260088F187 /* SpacemanTests.swift */,
+				5A5DA44D211036260088F187 /* Info.plist */,
+			);
+			path = SpacemanTests;
+			sourceTree = "<group>";
+		};
+		5A5DA455211036260088F187 /* SpacemanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5A5DA456211036260088F187 /* SpacemanUITests.swift */,
+				5A5DA458211036260088F187 /* Info.plist */,
+			);
+			path = SpacemanUITests;
+			sourceTree = "<group>";
+		};
+		5A68D770211039A400860348 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5A68D76B2110399E00860348 /* explosion.wav */,
+				5A68D76A2110399D00860348 /* laser.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		5A68D771211039BF00860348 /* particles */ = {
+			isa = PBXGroup;
+			children = (
+				5A68D772211039BF00860348 /* MyParticle.sks */,
+				5A68D774211039BF00860348 /* ship-fire.sks */,
+				5A68D775211039BF00860348 /* star-rain.sks */,
+				5A68D773211039BF00860348 /* spark.png */,
+				5A68D776211039BF00860348 /* star.png */,
+			);
+			path = particles;
+			sourceTree = "<group>";
+		};
+		5A68D7BA21103C3700860348 /* spaceship */ = {
+			isa = PBXGroup;
+			children = (
+				5A68D7BB21103C3700860348 /* SpaceShipLaserOverheatNode.swift */,
+				5A68D7BC21103C3700860348 /* SpaceShipLaserOverheat.swift */,
+				5A68D7BD21103C3700860348 /* SpaceShip.swift */,
+				5A0B49ED212308C100E75B60 /* Asset.swift */,
+			);
+			path = spaceship;
+			sourceTree = "<group>";
+		};
+		5A68DCAA21103EB500860348 /* nodes */ = {
+			isa = PBXGroup;
+			children = (
+				5A68DCA521103EAE00860348 /* SpaceSpriteNode.swift */,
+				5A68DCA421103EAE00860348 /* EnemyNode.swift */,
+				5A68DCA321103EAE00860348 /* NyanCat.swift */,
+				5A68DCA221103EAE00860348 /* SKNodeExplosion.swift */,
+			);
+			path = nodes;
+			sourceTree = "<group>";
+		};
+		5AA2585A27580F3400F96F4F /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				5A5DA43A211036240088F187 /* Main.storyboard */,
+				5A5DA43F211036260088F187 /* LaunchScreen.storyboard */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A5DA42C211036240088F187 /* Spaceman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5DA45B211036260088F187 /* Build configuration list for PBXNativeTarget "Spaceman" */;
+			buildPhases = (
+				5A5DA429211036240088F187 /* Sources */,
+				5A5DA42A211036240088F187 /* Frameworks */,
+				5A5DA42B211036240088F187 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spaceman;
+			productName = Spaceman;
+			productReference = 5A5DA42D211036240088F187 /* Spaceman.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A5DA446211036260088F187 /* SpacemanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5DA45E211036260088F187 /* Build configuration list for PBXNativeTarget "SpacemanTests" */;
+			buildPhases = (
+				5A5DA443211036260088F187 /* Sources */,
+				5A5DA444211036260088F187 /* Frameworks */,
+				5A5DA445211036260088F187 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A5DA449211036260088F187 /* PBXTargetDependency */,
+			);
+			name = SpacemanTests;
+			productName = SpacemanTests;
+			productReference = 5A5DA447211036260088F187 /* SpacemanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A5DA451211036260088F187 /* SpacemanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5DA461211036260088F187 /* Build configuration list for PBXNativeTarget "SpacemanUITests" */;
+			buildPhases = (
+				5A5DA44E211036260088F187 /* Sources */,
+				5A5DA44F211036260088F187 /* Frameworks */,
+				5A5DA450211036260088F187 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A5DA454211036260088F187 /* PBXTargetDependency */,
+			);
+			name = SpacemanUITests;
+			productName = SpacemanUITests;
+			productReference = 5A5DA452211036260088F187 /* SpacemanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A5DA425211036240088F187 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 1310;
+				ORGANIZATIONNAME = "Godwin A";
+				TargetAttributes = {
+					5A5DA42C211036240088F187 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1310;
+					};
+					5A5DA446211036260088F187 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1310;
+						TestTargetID = 5A5DA42C211036240088F187;
+					};
+					5A5DA451211036260088F187 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1310;
+						TestTargetID = 5A5DA42C211036240088F187;
+					};
+				};
+			};
+			buildConfigurationList = 5A5DA428211036240088F187 /* Build configuration list for PBXProject "Spaceman" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A5DA424211036240088F187;
+			productRefGroup = 5A5DA42E211036240088F187 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A5DA42C211036240088F187 /* Spaceman */,
+				5A5DA446211036260088F187 /* SpacemanTests */,
+				5A5DA451211036260088F187 /* SpacemanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A5DA42B211036240088F187 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5DA43C211036240088F187 /* Main.storyboard in Resources */,
+				5A68D778211039BF00860348 /* spark.png in Resources */,
+				5A5DA43E211036260088F187 /* Assets.xcassets in Resources */,
+				5A68D76F2110399E00860348 /* explosion.wav in Resources */,
+				5A68D77A211039BF00860348 /* star-rain.sks in Resources */,
+				5A68D77B211039BF00860348 /* star.png in Resources */,
+				5A68D76E2110399E00860348 /* laser.wav in Resources */,
+				5A68D779211039BF00860348 /* ship-fire.sks in Resources */,
+				5A5DA441211036260088F187 /* LaunchScreen.storyboard in Resources */,
+				5A68D777211039BF00860348 /* MyParticle.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5DA445211036260088F187 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5DA450211036260088F187 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A5DA429211036240088F187 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A68D7BF21103C3700860348 /* SpaceShipLaserOverheat.swift in Sources */,
+				5A68DCA921103EAE00860348 /* SpaceSpriteNode.swift in Sources */,
+				5A68D7622110398E00860348 /* GameScene.swift in Sources */,
+				5A68D7C021103C3700860348 /* SpaceShip.swift in Sources */,
+				5A68D7612110398E00860348 /* Bundle.swift in Sources */,
+				5A68D7642110398E00860348 /* GameLogic.swift in Sources */,
+				5A68D7672110398E00860348 /* StartPanelNode.swift in Sources */,
+				5A68DCA721103EAE00860348 /* NyanCat.swift in Sources */,
+				5A68DCA621103EAE00860348 /* SKNodeExplosion.swift in Sources */,
+				5A68DCA821103EAE00860348 /* EnemyNode.swift in Sources */,
+				5A0B49EE212308C100E75B60 /* Asset.swift in Sources */,
+				5A68D7BE21103C3700860348 /* SpaceShipLaserOverheatNode.swift in Sources */,
+				5A68D7652110398E00860348 /* AppDelegate.swift in Sources */,
+				5A68D7662110398E00860348 /* GameViewController.swift in Sources */,
+				5A68D7632110398E00860348 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5DA443211036260088F187 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5DA44C211036260088F187 /* SpacemanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5DA44E211036260088F187 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5DA457211036260088F187 /* SpacemanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A5DA449211036260088F187 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A5DA42C211036240088F187 /* Spaceman */;
+			targetProxy = 5A5DA448211036260088F187 /* PBXContainerItemProxy */;
+		};
+		5A5DA454211036260088F187 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A5DA42C211036240088F187 /* Spaceman */;
+			targetProxy = 5A5DA453211036260088F187 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A5DA43A211036240088F187 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A5DA43B211036240088F187 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A5DA43F211036260088F187 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A5DA440211036260088F187 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A5DA459211036260088F187 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A5DA45A211036260088F187 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A5DA45C211036260088F187 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6XEK7RQXGD;
+				INFOPLIST_FILE = Spaceman/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Gamemaker.Spaceman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A5DA45D211036260088F187 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6XEK7RQXGD;
+				INFOPLIST_FILE = Spaceman/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Gamemaker.Spaceman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A5DA45F211036260088F187 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6XEK7RQXGD;
+				INFOPLIST_FILE = SpacemanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Gamemaker.SpacemanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spaceman.app/Spaceman";
+			};
+			name = Debug;
+		};
+		5A5DA460211036260088F187 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6XEK7RQXGD;
+				INFOPLIST_FILE = SpacemanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Gamemaker.SpacemanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spaceman.app/Spaceman";
+			};
+			name = Release;
+		};
+		5A5DA462211036260088F187 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6XEK7RQXGD;
+				INFOPLIST_FILE = SpacemanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Gamemaker.SpacemanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Spaceman;
+			};
+			name = Debug;
+		};
+		5A5DA463211036260088F187 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6XEK7RQXGD;
+				INFOPLIST_FILE = SpacemanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Gamemaker.SpacemanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Spaceman;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A5DA428211036240088F187 /* Build configuration list for PBXProject "Spaceman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5DA459211036260088F187 /* Debug */,
+				5A5DA45A211036260088F187 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5DA45B211036260088F187 /* Build configuration list for PBXNativeTarget "Spaceman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5DA45C211036260088F187 /* Debug */,
+				5A5DA45D211036260088F187 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5DA45E211036260088F187 /* Build configuration list for PBXNativeTarget "SpacemanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5DA45F211036260088F187 /* Debug */,
+				5A5DA460211036260088F187 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5DA461211036260088F187 /* Build configuration list for PBXNativeTarget "SpacemanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5DA462211036260088F187 /* Debug */,
+				5A5DA463211036260088F187 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A5DA425211036240088F187 /* Project object */;
+}
